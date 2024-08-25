@@ -1,0 +1,41 @@
+# Loops n Python
+
+fruits = ["apple", "orange", "banana", "cherry"]
+
+for afruit in fruits:     # by item
+    print(afruit)
+# the above code print all the fruits in the list called fruits one per excuction then it move to the following fruit
+
+
+# The following program will use the for loop to draw a square
+
+import turtle            # set up alex
+wn = turtle.Screen()
+square = turtle.Turtle()
+
+for i in [0, 1, 2, 3]:      # repeat four times
+    square.forward(50)
+    square.left(90)
+
+wn.exitonclick()
+
+# The following code will calculate the sum of Marks for grade 9 which have 11 leearners Using the For loop
+
+marks= [ 55,66,30,70,80,80,95,100,40,32,78]
+total= 0
+for t in marks:
+    total= total + t
+print(total )
+
+
+
+#The program will add up the first n odd numbers where n is provided by the user
+
+n= int( input("How many odd number would you like to add together"))
+thesum= 0
+oddnumber = 1
+for counter in range(n):
+    thesum= thesum + oddnumber
+    oddnumber= oddnumber + 2
+print(thesum)
+
